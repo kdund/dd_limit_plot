@@ -1,5 +1,5 @@
-"#,XENON,Collaboration,2018.,arXiv-1805.12562,Phys.,Rev.,Lett.,121,111302,",,,,
-##,WIMP,mass/GeV,,upper,limit,[cm^2],-2,sigmath,percentile,UL,[cm^2],-1sighmath,0sigmath,1sigmath,2sigmath,
+"#,XENON,Collaboration,2018.,arXiv-1805.12562,Phys.,Rev.,Lett.,121,111302,",,
+##,WIMP,mass/GeV,upper,limit,[cm^2],-2,sigmath,percentile,UL,[cm^2],-1sighmath,0sigmath,1sigmath,2sigmath,
 6,2.49E-44,1.93E-44,2.47E-44,4.64E-44,1.27E-43,2.04E-43,
 8,2.05E-45,1.29E-45,1.71E-45,3.65E-45,7.41E-45,1.15E-44,
 9,9.40E-46,4.89E-46,6.70E-46,1.64E-45,3.08E-45,4.78E-45,

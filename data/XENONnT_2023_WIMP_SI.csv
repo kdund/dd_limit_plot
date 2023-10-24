@@ -1,4 +1,4 @@
-#,#WIMP,mass,[GeV/cˆ2],upper,limit,[cmˆ2],unconstrained,upper,limi,,t,[cmˆ2],-2sigmath,sensitivity,quantile,[cmˆ2],-1sigmath,sensitivity,quant,,ile,median,upper,limit,[cmˆ2],1sigmath,sensitivity,quantile,[cmˆ2],2sigma,,th,sensitivity,quantile
+#,#WIMP,mass,[GeV/cˆ2],upper,limit,[cmˆ2],unconstrained,upper,limi,t,[cmˆ2],-2sigmath,sensitivity,quantile,[cmˆ2],-1sigmath,sensitivity,quant,ile,median,upper,limit,[cmˆ2],1sigmath,sensitivity,quantile,[cmˆ2],2sigma,th,sensitivity,quantile
 6.00,	3.081e-44,	2.853e-44,	6.955e-45,	1.156e-44,	3.082e-44,	6.370e-44,	1.138e-43
 7.00,	7.318e-45,	4.976e-45,	1.613e-45,	2.727e-45,	7.317e-45,	1.471e-44,	2.594e-44
 8.00,	2.477e-45,	1.260e-45,	5.447e-46,	9.297e-46,	2.477e-45,	4.879e-45,	8.501e-45
