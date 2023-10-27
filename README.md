@@ -1,7 +1,7 @@
 # dd\_limit\_plot
 
 Repository to plot direct detection upper limits, projections and one day discoveries. 
-All files should be stored as .csvs
+All files should be stored as .csvs. Json files are converted from CSV files, which contains more details about the limit.
 
 ## Usage
 
