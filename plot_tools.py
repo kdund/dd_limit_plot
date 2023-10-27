@@ -6,6 +6,11 @@ import fnmatch
 
 DATA_PATH = "../data"
 
+# TODO: Arrange the limit by energy? like GeV, MeV, etc.
+# TODO: Arrange by more parameters? Like decades, type of experiments, etc.
+# TODO: Convert json into CSV automatically. Probably use chatgpt?
+# TODO: Is it possible to collect all of the limits automatially? How to link to data extraction tools (like WebPlotDigitizer?)
+
 def get_file_path(experiment, data_path=DATA_PATH):
     """
     Retrieve the path of a given experiment name (input strings)
