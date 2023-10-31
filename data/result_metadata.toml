@@ -1,5 +1,5 @@
 ["WIMPSI_XENONnT_2023_2303.14729"]
-description = "2023 tonne-year Spin-independent result from XENONnT"
+description = "2023 tonne-year Spin-independent result from XENONnT (power-constrained at 50%)"
 exposure = 1.09 #tonne-year
 independent_variable = "wimp_mass"
 wimp_mass_index = 0
@@ -117,6 +117,77 @@ reference = """
     year = "2018"
 }
 """
+
+["WIMPSI_LZ_2023_2207.03764"]
+description = "2023 tonne-year Spin-independent result from LZ (power-constrained at -1sigma)"
+label="LZ (2023)"
+header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
+reference = """
+@article{LZ:2022lsv,
+    author = "Aalbers, J. and others",
+    collaboration = "LZ",
+    title = "{First Dark Matter Search Results from the LUX-ZEPLIN (LZ) Experiment}",
+    eprint = "2207.03764",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/PhysRevLett.131.041002",
+    journal = "Phys. Rev. Lett.",
+    volume = "131",
+    number = "4",
+    pages = "041002",
+    year = "2023"
+}
+
+"""
+delimiter = " "
+
+["WIMPSDp_LZ_2023_2207.03764"]
+description = "2023 tonne-year Spin-dependent (proton-only) result from LZ (power-constrained at -1sigma)"
+label="LZ (2023)"
+header = ["wimp_mass","upper_limit","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma","upper_limit_negative_nuclear_uncert","upper_limit_positive_nuclear_uncert"]
+reference = """
+@article{LZ:2022lsv,
+    author = "Aalbers, J. and others",
+    collaboration = "LZ",
+    title = "{First Dark Matter Search Results from the LUX-ZEPLIN (LZ) Experiment}",
+    eprint = "2207.03764",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/PhysRevLett.131.041002",
+    journal = "Phys. Rev. Lett.",
+    volume = "131",
+    number = "4",
+    pages = "041002",
+    year = "2023"
+}
+
+"""
+delimiter = " "
+
+["WIMPSDn_LZ_2023_2207.03764"]
+description = "2023 tonne-year Spin-dependent (neutron-only) result from LZ (power-constrained at -1sigma)"
+label="LZ (2023)"
+header = ["wimp_mass","upper_limit","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma","upper_limit_negative_nuclear_uncert","upper_limit_positive_nuclear_uncert"]
+reference = """
+@article{LZ:2022lsv,
+    author = "Aalbers, J. and others",
+    collaboration = "LZ",
+    title = "{First Dark Matter Search Results from the LUX-ZEPLIN (LZ) Experiment}",
+    eprint = "2207.03764",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/PhysRevLett.131.041002",
+    journal = "Phys. Rev. Lett.",
+    volume = "131",
+    number = "4",
+    pages = "041002",
+    year = "2023"
+}
+
+"""
+delimiter = " "
+
+
 #["WIMPSI_PANDAX4T"]
 #["WIMPSI_XENON1T_S2only"]
 #["WIMPSI_XENON1T_Migdal"]
