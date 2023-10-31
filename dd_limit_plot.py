@@ -17,6 +17,27 @@ default_values = dict(
     delimiter=","  # change this if some .csv uses other format
 )
 
+def find_dd_results(result_key="*.csv"):
+    possible_results = glob(str(data.joinpath(result_key)))
+    if len(possible_results) == 0:
+            raise FileNotFoundError("No data .csv matching {:s}".format(str(data.joinpath(result_key))))
+    print("{:d} files match your query:".format(len(possible_results)))
+    
+    ret = dict()
+    for fn in possible_results:
+        key = Path(fn).stem
+        try:
+            ret[key] = DD_result(fn)
+        except Exception as e:
+            print("Unable to load {:s}".format(fn))
+            #ret[key] = {'description':'unable to load {:s}, error: {:s}'.format(fn, str(e))}
+
+    print("Loaded {:d} files:".format(len(ret)))
+    for k in sorted(ret.keys()):
+        description = ret[k].get("description",k + " no metadata")
+        print(description)
+
+
 
 class DD_result:
     def __setitem__(self, key, value):
@@ -27,7 +48,7 @@ class DD_result:
 
     def get(self, key, default=None):
         if hasattr(self, key):
-            return self["key"]
+            return self[key]
         else:
             return default
 
