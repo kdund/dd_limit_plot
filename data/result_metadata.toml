@@ -1,0 +1,128 @@
+["WIMPSI_XENONnT_2023_2303.14729"]
+description = "2023 tonne-year Spin-independent result from XENONnT"
+exposure = 1.09 #tonne-year
+independent_variable = "wimp_mass"
+wimp_mass_index = 0
+limit_index = 1
+provenance = "Collaboration"
+default_plot_color = "dodgerblue"
+label = "XENONnT (2023)"
+header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
+reference = """
+@article{XENON:2023cxc,
+    author = "Aprile, E. and others",
+    collaboration = "XENON",
+    title = "{First Dark Matter Search with Nuclear Recoils from the XENONnT Experiment}",
+    eprint = "2303.14729",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/PhysRevLett.131.041003",
+    journal = "Phys. Rev. Lett.",
+    volume = "131",
+    number = "4",
+    pages = "041003",
+    year = "2023"
+    } 
+    """
+["WIMPSDp_XENONnT_2023_2303.14729"]
+description = "2023 tonne-year Spin-dependent (proton only) result from XENONnT"
+exposure = 1.09 #tonne-year
+independent_variable = "wimp_mass"
+wimp_mass_index = 0
+limit_index = 1
+provenance = "Collaboration"
+default_plot_color = "dodgerblue"
+label = "XENONnT (2023)"
+header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
+reference = """
+@article{XENON:2023cxc,
+    author = "Aprile, E. and others",
+    collaboration = "XENON",
+    title = "{First Dark Matter Search with Nuclear Recoils from the XENONnT Experiment}",
+    eprint = "2303.14729",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/PhysRevLett.131.041003",
+    journal = "Phys. Rev. Lett.",
+    volume = "131",
+    number = "4",
+    pages = "041003",
+    year = "2023"
+    } 
+    """
+["WIMPSDn_XENONnT_2023_2303.14729"]
+description = "2023 tonne-year Spin-dependent (neutron only) result from XENONnT"
+exposure = 1.09 #tonne-year
+independent_variable = "wimp_mass"
+wimp_mass_index = 0
+limit_index = 1
+provenance = "Collaboration"
+default_plot_color = "dodgerblue"
+label = "XENONnT (2023)"
+header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
+reference = """
+@article{XENON:2023cxc,
+    author = "Aprile, E. and others",
+    collaboration = "XENON",
+    title = "{First Dark Matter Search with Nuclear Recoils from the XENONnT Experiment}",
+    eprint = "2303.14729",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/PhysRevLett.131.041003",
+    journal = "Phys. Rev. Lett.",
+    volume = "131",
+    number = "4",
+    pages = "041003",
+    year = "2023"
+    } 
+    """
+
+["nufloor_Billardetal_2014_1307.5458"]
+description = "Neutrino Floor from Billard et al (2014)"
+independent_variable = "wimp_mass"
+label = "Billard &al (2014)"
+header = ["wimp_mass","nufloor"]
+reference = """
+    @article{Billard:2013qya,
+    author = "Billard, J. and Strigari, L. and Figueroa-Feliciano, E.",
+    title = "{Implication of neutrino backgrounds on the reach of next generation dark matter direct detection experiments}",
+    eprint = "1307.5458",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ph",
+    doi = "10.1103/PhysRevD.89.023524",
+    journal = "Phys. Rev. D",
+    volume = "89",
+    number = "2",
+    pages = "023524",
+    year = "2014"
+    }
+    """
+["WIMPSI_XENON1T_2018_1805.12562"]
+description = "XENON1T tonne-year SI WIMP limit"
+label="XENON1T (2018)"
+#header = ["wimp_mass","upper_limit","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
+reference = """
+@article{XENON:2018voc,
+    author = "Aprile, E. and others",
+    collaboration = "XENON",
+    title = "{Dark Matter Search Results from a One Ton-Year Exposure of XENON1T}",
+    eprint = "1805.12562",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph.CO",
+    doi = "10.1103/PhysRevLett.121.111302",
+    journal = "Phys. Rev. Lett.",
+    volume = "121",
+    number = "11",
+    pages = "111302",
+    year = "2018"
+}
+"""
+#["WIMPSI_PANDAX4T"]
+#["WIMPSI_XENON1T_S2only"]
+#["WIMPSI_XENON1T_Migdal"]
+#["WIMPSI_XENON1T_Migdal"]
+#["WIMPSDp_LZ"]
+#["WIMPSDn_LZ"]
+#["WIMPSI_XENONnT_projection"]
+#["WIMPSI_LZ_projection"]
+
