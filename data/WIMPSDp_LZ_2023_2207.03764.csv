@@ -1,4 +1,4 @@
-mass[GeV] limit -2sigma -1sigma median +1sigma +2sigma -nucl.unc. +nucl.unc [all xsec in cm^2]
+#mass[GeV] limit -2sigma -1sigma median +1sigma +2sigma -nucl.unc. +nucl.unc [all xsec in cm^2]
 9.00000e+00 1.45497e-39 7.49221e-40 1.14434e-39 1.93898e-39 3.61851e-39 5.49785e-39 4.11536e-38 1.38131e-39
 1.10000e+01 4.11760e-40 2.40290e-40 3.70190e-40 6.57983e-40 1.22005e-39 1.89044e-39 9.89482e-39 3.71337e-40
 1.30000e+01 1.87465e-40 1.14836e-40 1.87465e-40 3.40556e-40 6.38363e-40 9.67722e-40 3.66284e-39 1.54160e-40
