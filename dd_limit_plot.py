@@ -29,7 +29,7 @@ def find_dd_results(result_key="*.csv"):
         try:
             ret[key] = DD_result(fn)
         except Exception as e:
-            print("Unable to load {:s}".format(fn))
+            print("Unable to load {:s}; {:s}".format(fn, str(e)))
             #ret[key] = {'description':'unable to load {:s}, error: {:s}'.format(fn, str(e))}
 
     print("Loaded {:d} files:".format(len(ret)))
