@@ -1,11 +1,22 @@
+["default_values"] #an example of a metadata set.
+description = "" #Short summary of what the result is.
+independent_variable = "wimp_mass" #used to state what the limit depends on
+units_independent_variable = "GeV/c^2"
+units_dependent_variable = "cm^2"
+header = ["wimp_mass", "upper_limit"] #These lines define which columns from .csv correspond to what values
+delimiter = ","
+label = "" #label used for plotting
+plot_color = "k" #plot color unless overridden
+provenance = ".csv file" #,"Collaboration", "webplotdigitized" or whatnot-- good to remember if they're solid
+#optional 
+# reference = """.bib reference text"""
+# exposure #might be nice if you want to plot best-limit vs exposure?
 ["WIMPSI_XENONnT_2023_2303.14729"]
 description = "2023 tonne-year Spin-independent result from XENONnT (power-constrained at 50%)"
 exposure = 1.09 #tonne-year
 independent_variable = "wimp_mass"
-wimp_mass_index = 0
-limit_index = 1
 provenance = "Collaboration"
-default_plot_color = "dodgerblue"
+color = "dodgerblue"
 label = "XENONnT (2023)"
 header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
 reference = """
@@ -28,10 +39,8 @@ reference = """
 description = "2023 tonne-year Spin-dependent (proton only) result from XENONnT"
 exposure = 1.09 #tonne-year
 independent_variable = "wimp_mass"
-wimp_mass_index = 0
-limit_index = 1
 provenance = "Collaboration"
-default_plot_color = "dodgerblue"
+color = "dodgerblue"
 label = "XENONnT (2023)"
 header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
 reference = """
@@ -54,10 +63,8 @@ reference = """
 description = "2023 tonne-year Spin-dependent (neutron only) result from XENONnT"
 exposure = 1.09 #tonne-year
 independent_variable = "wimp_mass"
-wimp_mass_index = 0
-limit_index = 1
 provenance = "Collaboration"
-default_plot_color = "dodgerblue"
+color = "dodgerblue"
 label = "XENONnT (2023)"
 header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
 reference = """

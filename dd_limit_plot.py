@@ -9,13 +9,16 @@ from glob import glob
 data = files('data')
 metadata_file = str(data.joinpath("result_metadata.toml"))
 
-default_values = dict(
-    independent_variable="wimp_mass",
-    units_independent_variable="GeV/c^2",
-    units_dependent_variable="cm^2",
-    header=["wimp_mass", "upper_limit"],  # use this to choose columns
-    delimiter=","  # change this if some .csv uses other format
-)
+#default_values = dict(
+#    independent_variable="wimp_mass",
+#    units_independent_variable="GeV/c^2",
+#    units_dependent_variable="cm^2",
+#    header=["wimp_mass", "upper_limit"],  # use this to choose columns
+#    delimiter=","  # change this if some .csv uses other format
+#)
+with open(metadata_file, "r") as f:
+    metadata = tomlkit.load(f)
+default_values = metadata["default_values"]
 
 def find_dd_results(result_key="*.csv"):
     possible_results = glob(str(data.joinpath(result_key)))
@@ -76,7 +79,8 @@ class DD_result:
 
     def plot(self, plot_variable="upper_limit", **plot_kwargs):
         args = dict(
-            label=self.get("plot_label", "")
+            label=self.get("plot_label", ""),
+            color=self.get("color", "k")
         )
         args.update(**plot_kwargs)
         plt.plot(self[self.independent_variable],
