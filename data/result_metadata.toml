@@ -11,6 +11,7 @@ provenance = ".csv file" #,"Collaboration", "webplotdigitized" or whatnot-- good
 #optional 
 # reference = """.bib reference text"""
 # exposure #might be nice if you want to plot best-limit vs exposure?
+
 ["WIMPSI_XENONnT_2023_2303.14729"]
 description = "2023 tonne-year Spin-independent result from XENONnT (power-constrained at 50%)"
 exposure = 1.09 #tonne-year
@@ -34,7 +35,8 @@ reference = """
     pages = "041003",
     year = "2023"
     } 
-    """
+"""
+
 ["WIMPSDp_XENONnT_2023_2303.14729"]
 description = "2023 tonne-year Spin-dependent (proton only) result from XENONnT"
 exposure = 1.09 #tonne-year
@@ -58,7 +60,8 @@ reference = """
     pages = "041003",
     year = "2023"
     } 
-    """
+"""
+
 ["WIMPSDn_XENONnT_2023_2303.14729"]
 description = "2023 tonne-year Spin-dependent (neutron only) result from XENONnT"
 exposure = 1.09 #tonne-year
@@ -82,7 +85,7 @@ reference = """
     pages = "041003",
     year = "2023"
     } 
-    """
+"""
 
 ["nufloor_Billardetal_2014_1307.5458"]
 description = "Neutrino Floor from Billard et al (2014)"
@@ -103,7 +106,8 @@ reference = """
     pages = "023524",
     year = "2014"
     }
-    """
+"""
+
 ["WIMPSI_XENON1T_2018_1805.12562"]
 description = "XENON1T tonne-year SI WIMP limit"
 label="XENON1T (2018)"
@@ -144,7 +148,6 @@ reference = """
     pages = "041002",
     year = "2023"
 }
-
 """
 delimiter = " "
 
@@ -167,7 +170,6 @@ reference = """
     pages = "041002",
     year = "2023"
 }
-
 """
 delimiter = " "
 
@@ -190,7 +192,6 @@ reference = """
     pages = "041002",
     year = "2023"
 }
-
 """
 delimiter = " "
 
@@ -217,8 +218,27 @@ reference = """
 """
 delimiter = ","
 
+["WIMPSI_PANDAXII_2020_2007.15469"]
+description = "Results of Dark Matter Search using the Full PandaX-II Exposure"
+label="PandaX-II (2020)"
+header = ["wimp_mass","upper_limit"]
+reference = """
+@article{PandaX-II:2020oim,
+    author = "Wang, Qiuhong and others",
+    collaboration = "PandaX-II",
+    title = "{Results of dark matter search using the full PandaX-II exposure}",
+    eprint = "2007.15469",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph.CO",
+    doi = "10.1088/1674-1137/abb658",
+    journal = "Chin. Phys. C",
+    volume = "44",
+    number = "12",
+    pages = "125001",
+    year = "2020"
+}
+"""
 
-#["WIMPSI_PANDAX4T"]
 #["WIMPSI_XENON1T_S2only"]
 #["WIMPSI_XENON1T_Migdal"]
 #["WIMPSI_XENON1T_Migdal"]
@@ -226,4 +246,3 @@ delimiter = ","
 #["WIMPSDn_LZ"]
 #["WIMPSI_XENONnT_projection"]
 #["WIMPSI_LZ_projection"]
-
