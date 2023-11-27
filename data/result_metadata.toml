@@ -215,7 +215,7 @@ reference = """
     year = "2021"
 }
 """
-delimiter = " "
+delimiter = ","
 
 
 #["WIMPSI_PANDAX4T"]
