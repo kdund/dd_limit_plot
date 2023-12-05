@@ -195,6 +195,29 @@ reference = """
 """
 delimiter = " "
 
+["WIMPSI_PANDAX-4T_2021_2107.13438.csv"]
+description = "2021 Spin-independent result from PandaX-4T commisioning run"
+label="PandaX-4T (2023)"
+header = ["wimp_mass","upper_limit"]
+provenance = "collaboration"
+reference = """
+@article{PandaX-4T:2021bab,
+    author = "Meng, Yue and others",
+    collaboration = "PandaX-4T",
+    title = "{Dark Matter Search Results from the PandaX-4T Commissioning Run}",
+    eprint = "2107.13438",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/PhysRevLett.127.261802",
+    journal = "Phys. Rev. Lett.",
+    volume = "127",
+    number = "26",
+    pages = "261802",
+    year = "2021"
+}
+"""
+delimiter = ","
+
 ["WIMPSI_PANDAXII_2020_2007.15469"]
 description = "Results of Dark Matter Search using the Full PandaX-II Exposure"
 label="PandaX-II (2020)"
