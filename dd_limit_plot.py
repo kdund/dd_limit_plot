@@ -20,7 +20,8 @@ with open(metadata_file, "r") as f:
     metadata = tomlkit.load(f)
 default_values = metadata["default_values"]
 
-def find_dd_results(result_key="*.csv"):
+
+def find_dd_results(result_key="*.csv", require_metadata = False):
     possible_results = glob(str(data.joinpath(result_key)))
     if len(possible_results) == 0:
             raise FileNotFoundError("No data .csv matching {:s}".format(str(data.joinpath(result_key))))
@@ -38,7 +39,10 @@ def find_dd_results(result_key="*.csv"):
     print("Loaded {:d} files:".format(len(ret)))
     for k in sorted(ret.keys()):
         description = ret[k].get("description",k + " no metadata")
+        if description == "":
+            description = k + "no metadata"
         print(description)
+    return ret
 
 
 
@@ -75,12 +79,15 @@ class DD_result:
 
         result_file = np.loadtxt(filename, delimiter=self.delimiter)
         for i, column_name in enumerate(self.header):
-            self[column_name] = result_file[:, i]
+            mult = 1.
+            if column_name is not self.independent_variable:
+                mult = self.scaling
+            self[column_name] = mult*result_file[:, i]
 
     def plot(self, plot_variable="upper_limit", **plot_kwargs):
         args = dict(
             label=self.get("plot_label", ""),
-            color=self.get("color", "k")
+            color=self.get("plot_color", "k")
         )
         args.update(**plot_kwargs)
         plt.plot(self[self.independent_variable],
