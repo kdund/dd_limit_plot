@@ -80,8 +80,11 @@ class DD_result:
         result_file = np.loadtxt(filename, delimiter=self.delimiter)
         for i, column_name in enumerate(self.header):
             mult = 1.
-            if column_name is not self.independent_variable:
+            if column_name != self.independent_variable:
                 mult = self.scaling
+                if mult != 1:
+                    print("colname, idvname")
+                    print(column_name, self.independent_variable)
             self[column_name] = mult*result_file[:, i]
 
     def plot(self, plot_variable="upper_limit", **plot_kwargs):
