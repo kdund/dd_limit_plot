@@ -12,6 +12,8 @@ provenance = ".csv file" #,"Collaboration", "webplotdigitized" or whatnot-- good
 #optional 
 # reference = """.bib reference text"""
 # exposure #might be nice if you want to plot best-limit vs exposure?
+# label_range_down = -np.inf #set this if you want to give the plotter a hint for the range in which to place the label (e.g. above 70 GeV, xenon limits are flattish)
+# label_range_up = np.inf
 
 ["WIMPSI_XENONnT_2023_2303.14729"]
 description = "2023 tonne-year Spin-independent result from XENONnT (power-constrained at 50%)"
@@ -21,6 +23,7 @@ provenance = "Collaboration"
 plot_color = "dodgerblue"
 label = "XENONnT (2023)"
 header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
+label_range_down = 60
 reference = """
 @article{XENON:2023cxc,
     author = "Aprile, E. and others",
@@ -46,6 +49,7 @@ provenance = "Collaboration"
 plot_color = "dodgerblue"
 label = "XENONnT (2023)"
 header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
+label_range_down = 60
 reference = """
 @article{XENON:2023cxc,
     author = "Aprile, E. and others",
@@ -71,6 +75,7 @@ provenance = "Collaboration"
 plot_color = "dodgerblue"
 label = "XENONnT (2023)"
 header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
+label_range_down = 60
 reference = """
 @article{XENON:2023cxc,
     author = "Aprile, E. and others",
@@ -116,6 +121,7 @@ label="XENON1T (2018)"
 header = ["wimp_mass","upper_limit","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
 delimiter=","
 plot_color = "navy"
+label_range_down = 60
 reference = """
 @article{XENON:2018voc,
     author = "Aprile, E. and others",
@@ -138,6 +144,7 @@ description = "2023 tonne-year Spin-independent result from LZ (power-constraine
 label="LZ (2023)"
 header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
 plot_color = "darkorange"
+label_range_down = 60
 reference = """
 @article{LZ:2022lsv,
     author = "Aalbers, J. and others",
@@ -161,6 +168,7 @@ description = "2023 tonne-year Spin-dependent (proton-only) result from LZ (powe
 label="LZ (2023)"
 header = ["wimp_mass","upper_limit","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma","upper_limit_negative_nuclear_uncert","upper_limit_positive_nuclear_uncert"]
 plot_color = "darkorange"
+label_range_down = 60
 reference = """
 @article{LZ:2022lsv,
     author = "Aalbers, J. and others",
@@ -184,6 +192,7 @@ description = "2023 tonne-year Spin-dependent (neutron-only) result from LZ (pow
 label="LZ (2023)"
 header = ["wimp_mass","upper_limit","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma","upper_limit_negative_nuclear_uncert","upper_limit_positive_nuclear_uncert"]
 plot_color = "darkorange"
+label_range_down = 60
 reference = """
 @article{LZ:2022lsv,
     author = "Aalbers, J. and others",
@@ -208,6 +217,7 @@ label="PandaX-4T (2023)"
 header = ["wimp_mass","upper_limit"]
 provenance = "collaboration"
 plot_color = "salmon"
+label_range_down = 60
 reference = """
 @article{PandaX-4T:2021bab,
     author = "Meng, Yue and others",
@@ -231,6 +241,7 @@ description = "Results of Dark Matter Search using the Full PandaX-II Exposure"
 label="PandaX-II (2020)"
 header = ["wimp_mass","upper_limit"]
 plot_color = "salmon"
+label_range_down = 60
 reference = """
 @article{PandaX-II:2020oim,
     author = "Wang, Qiuhong and others",
@@ -283,6 +294,8 @@ units_dependent_variable = "cm^2"
 label = "XENON1T (2019)"
 delimiter = ","
 plot_color = "navy"
+label_range_down = 0.5
+label_range_up = 2
 reference = """
 @article{XENON:2019zpr,
     author = "Aprile, E. and others",
@@ -329,6 +342,7 @@ units_dependent_variable = "cm^2"
 label = "XENON1T (2021)"
 delimiter = ","
 plot_color = "navy"
+label_range_up = 6
 reference = """
 @article{XENON:2020gfr,
     author = "Aprile, E. and others",
@@ -355,6 +369,7 @@ units_dependent_variable = "cm^2"
 label = "XENONnT (20ty)"
 delimiter = ","
 plot_color = "dodgerblue"
+label_range_down = 60
 reference = """
 @article{XENON:2020kmp,
     author = "Aprile, E. and others",
@@ -381,6 +396,7 @@ label = "XENONnT (20ty)"
 delimiter = ","
 exposure = 15.3 #ty, 1000 d x 5.6 t
 plot_color = "darkorange"
+label_range_down = 60
 reference = """
 @article{LZ:2018qzl,
     author = "Akerib, D. S. and others",
@@ -408,6 +424,7 @@ label = "XENONnT (20ty)"
 delimiter = ","
 exposure = 15.3 #ty, 1000 d x 5.6 t
 plot_color = "darkorange"
+label_range_down = 60
 reference = """
 @article{LZ:2018qzl,
     author = "Akerib, D. S. and others",
@@ -435,6 +452,7 @@ label = "XENONnT (20ty)"
 delimiter = ","
 exposure = 15.3 #ty, 1000 d x 5.6 t
 plot_color = "darkorange"
+label_range_down = 60
 reference = """
 @article{LZ:2018qzl,
     author = "Akerib, D. S. and others",
@@ -461,6 +479,7 @@ label = "Darwin (200ty)"
 delimiter = ","
 exposure = 200 #ty, 1000 d x 5.6 t
 plot_color = "darkgreen"
+label_range_down = 60
 reference = """
 @article{DARWIN:2016hyl,
     author = "Aalbers, J. and others",
@@ -485,6 +504,7 @@ label = "DarkSide-20k (100ty)"
 delimiter = ","
 exposure = 100 #ty, 1000 d x 5.6 t
 plot_color = "purple"
+label_range_down = 200
 reference = """
 @article{DarkSide-20k:2017zyg,
     author = "Aalseth, C. E. and others",
