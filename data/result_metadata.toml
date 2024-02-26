@@ -392,7 +392,7 @@ provenance = "Collaboration"
 header = ["index","wimp_mass","sensitivity_median"]
 units_independent_variable = "GeV/c^2"
 units_dependent_variable = "cm^2"
-label = "XENONnT (20ty)"
+label = "LZ (15.3 ty)"
 delimiter = ","
 exposure = 15.3 #ty, 1000 d x 5.6 t
 plot_color = "darkorange"
@@ -557,7 +557,7 @@ header = ["wimp_mass", "upper_limit_best", "upper_limit", "upper_upper_limit", "
 delimiter = "\t"
 label = "CDMSlite (2018)" 
 provenance = "Collaboration"
-plot_color = "crimson"
+plot_color = "red"
 reference = """
 @article{SuperCDMS:2017nns,
     author = "Agnese, R. and others",
@@ -584,7 +584,7 @@ header = ["wimp_mass", "upper_limit"]
 delimiter = ","
 label = "DAMIC (2020)" #label used for plotting
 provenance = ".csv file" 
-plot_color = "crimson"
+plot_color = "brown"
 reference = """
 @article{DAMIC:2020cut,
     author = "Aguilar-Arevalo, A. and others",
@@ -625,5 +625,31 @@ reference = """
     number = "10",
     pages = "102002",
     year = "2019"
+}
+"""
+["WIMPSI_LUX_2017_run4combined"]
+description = "LUX SI dark-matter search"
+exposure = 0.092 #ty, 250 kgd
+independent_variable = "wimp_mass" 
+units_independent_variable = "GeV/c^2"
+units_dependent_variable = "cm^2" #once scaling applied
+scaling = 1
+header = ["index", "wimp_mass", "upper_limit"] 
+delimiter = ","
+plot_color = "yellow"
+reference = """
+@article{LUX:2016ggv,
+    author = "Akerib, D. S. and others",
+    collaboration = "LUX",
+    title = "{Results from a search for dark matter in the complete LUX exposure}",
+    eprint = "1608.07648",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph.CO",
+    doi = "10.1103/PhysRevLett.118.021303",
+    journal = "Phys. Rev. Lett.",
+    volume = "118",
+    number = "2",
+    pages = "021303",
+    year = "2017"
 }
 """
