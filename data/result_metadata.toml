@@ -610,6 +610,7 @@ units_dependent_variable = "cm^2" #once scaling applied
 scaling = 1e-36
 header = ["wimp_mass", "upper_limit"] 
 delimiter = ","
+label = "CREST-III (2019)" #label used for plotting
 plot_color = "crimson"
 reference = """
 @article{CRESST:2019jnq,
@@ -636,7 +637,8 @@ units_dependent_variable = "cm^2" #once scaling applied
 scaling = 1
 header = ["index", "wimp_mass", "upper_limit"] 
 delimiter = ","
-plot_color = "yellow"
+label = "LUX (2017)" #label used for plotting
+plot_color = "magenta"
 reference = """
 @article{LUX:2016ggv,
     author = "Akerib, D. S. and others",
