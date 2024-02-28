@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from importlib_resources import files
 from pathlib import Path
 from glob import glob
+from itertools import cycle
 
 data = files('data')
 metadata_file = str(data.joinpath("result_metadata.toml"))
@@ -47,6 +48,7 @@ def find_dd_results(result_key="*.csv", require_metadata = False):
 
 
 class DD_result:
+    collected_lines = dict() # dict to store matplotlib line objects for legend-making
     def __setitem__(self, key, value):
         setattr(self, key, value)
 
@@ -71,6 +73,7 @@ class DD_result:
     def load(self, filename):
         values = copy(default_values)
         key = Path(filename).stem
+        self.key = key
         with open(metadata_file, "r") as f:
             metadata = tomlkit.load(f)
         values.update(metadata.get(key, dict()))
@@ -93,8 +96,12 @@ class DD_result:
             color=self.get("plot_color", "k")
         )
         args.update(**plot_kwargs)
-        plt.plot(self[self.independent_variable],
-                 self[plot_variable], **args)
+        x = self[self.independent_variable]
+        y = self[plot_variable]
+        line, = plt.plot(x, y, **args)
+        xd = self.get("label_range_down", x[0])
+        xu = self.get("label_range_up", x[-1])
+        self.collected_lines[self.key + plot_variable] = line, (xd,xu) , np.min(y), self.get("label","")
 
     def plot_upper_limit(self, **plot_kwargs):
         plot_kwargs["linestyle"] = plot_kwargs.get("linestyle", "-")
@@ -134,3 +141,21 @@ class DD_result:
         self.plot_band(lower_edge = "sensitivity_m1sigma",
                        upper_edge = "sensitivity_p1sigma",
                        color=color_1sigma, **plot_kwargs)
+
+    @classmethod
+    def add_line_legends(self, position_overrides=dict(),xmin = -np.inf, xmax=np.inf,**label_args):
+        from labellines import labelLine
+        ks = np.array(sorted(self.collected_lines.keys()))
+        mins = [self.collected_lines[k][2] for k in ks]
+        sis = np.argsort(mins)
+        # Now the lines are sorted by their values:
+        i_cycler = cycle([[0, 1.2], [1, 0.9]])
+        ks = ks[sis]
+        for k, (xi, xscale) in zip(ks, i_cycler):
+            try:
+                line, x, miny, label = self.collected_lines[k]
+                x = [max(x[0], xmin), min(x[1], xmax)]
+                xpos = position_overrides.get(k, x[xi]*xscale)
+                labelLine(line, xpos, **label_args)
+            except Exception as e:
+                print(k, e)

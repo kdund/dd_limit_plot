@@ -1,0 +1,4 @@
+numpy
+tomlkit
+matplotlib
+matplotlib-label-lines #required only for nice labels
