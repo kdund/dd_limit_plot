@@ -143,7 +143,10 @@ class DD_result:
                        color=color_1sigma, **plot_kwargs)
 
     @classmethod
-    def add_line_legends(self, position_overrides=dict(),xmin = -np.inf, xmax=np.inf,**label_args):
+    def add_line_legends(self, position_overrides=dict(),
+                         xmin = -np.inf, xmax=np.inf,
+                         outline_width=2, outline_color="auto",
+                         **label_args):
         from labellines import labelLine
         ks = np.array(sorted(self.collected_lines.keys()))
         mins = [self.collected_lines[k][2] for k in ks]
@@ -156,6 +159,7 @@ class DD_result:
                 line, x, miny, label = self.collected_lines[k]
                 x = [max(x[0], xmin), min(x[1], xmax)]
                 xpos = position_overrides.get(k, x[xi]*xscale)
-                labelLine(line, xpos, **label_args)
+                labelLine(line, xpos, outline_width = outline_width, 
+                          outline_color = outline_color, **label_args)
             except Exception as e:
                 print(k, e)
