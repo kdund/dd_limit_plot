@@ -1,4 +1,5 @@
 numpy
 tomlkit
+importlib-resources
 matplotlib
 matplotlib-label-lines #required only for nice labels
