@@ -655,3 +655,27 @@ reference = """
     year = "2017"
 }
 """
+
+
+["nufog_OHare_2021_2109.03116"]
+description = "Neutrino fog contours from O'Hare (2021) where it is defined as when the sensitivity decreases slower than the square root of exposure. Contours also added for when it decreases slower than exposure^2.5 or 3 (while the exponent may decrease after, these contours only show the upper edge.)"
+independent_variable = "wimp_mass"
+label = "O'Hare (2021)"
+header = ["wimp_mass","nufloor","nufog_2d5","nufog_3d0"]
+plot_color = "gray"
+delimiter = " "
+reference = """
+@article{OHare:2021utq,
+    author = "O'Hare, Ciaran A. J.",
+    title = "{New Definition of the Neutrino Floor for Direct Dark Matter Searches}",
+    eprint = "2109.03116",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ph",
+    doi = "10.1103/PhysRevLett.127.251802",
+    journal = "Phys. Rev. Lett.",
+    volume = "127",
+    number = "25",
+    pages = "251802",
+    year = "2021"
+}
+"""
