@@ -528,24 +528,24 @@ units_independent_variable = "GeV/c^2"
 units_dependent_variable = "cm^2"
 header = ["wimp_mass", "upper_limit"] #These lines define which columns from .csv correspond to what values
 delimiter = ","
-label = "DarkSide-50 (2018, NQ)" #label used for plotting
+label = "DarkSide-50 (2023, NQ)" #label used for plotting
 provenance = ".csv file" #,"Collaboration", "webplotdigitized" or whatnot-- good to remember if they're solid
 plot_color = "purple"
 reference = """
-@article{DarkSide-50:2022qzh,
+@article{DarkSide:2018bpj,
     author = "Agnes, P. and others",
-    collaboration = "DarkSide-50",
-    title = "{Search for low-mass dark matter WIMPs with 12~ton-day exposure of DarkSide-50}",
-    eprint = "2207.11966",
+    collaboration = "DarkSide",
+    title = "{Low-Mass Dark Matter Search with the DarkSide-50 Experiment}",
+    eprint = "1802.06994",
     archivePrefix = "arXiv",
-    primaryClass = "hep-ex",
-    reportNumber = "FERMILAB-PUB-22-589-ND-PPD-SCD",
-    doi = "10.1103/PhysRevD.107.063001",
-    journal = "Phys. Rev. D",
-    volume = "107",
-    number = "6",
-    pages = "063001",
-    year = "2023"
+    primaryClass = "astro-ph.HE",
+    reportNumber = "FERMILAB-PUB-18-048-AE-E-PPD",
+    doi = "10.1103/PhysRevLett.121.081307",
+    journal = "Phys. Rev. Lett.",
+    volume = "121",
+    number = "8",
+    pages = "081307",
+    year = "2018"
 }
 """
 ["WIMPSI_CDMSlite_2018"]
@@ -679,3 +679,46 @@ reference = """
     year = "2021"
 }
 """
+["WIMPSI_LZ_2024_privatecommunication"]
+description = "2024 4.2 tonne-year Spin-independent result from LZ (power-constrained at -1sigma)"
+label="LZ (2024)"
+header = ["wimp_mass","upper_limit","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
+plot_color = "darkorange"
+label_range_down = 60
+reference = """
+@article{LZCollaboration:2024lux,
+    author = "Aalbers, J. and others",
+    collaboration = "LZ Collaboration",
+    title = "{Dark Matter Search Results from 4.2 Tonne-Years of Exposure of the LUX-ZEPLIN (LZ) Experiment}",
+    eprint = "2410.17036",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    month = "10",
+    year = "2024"
+}
+"""
+delimiter = ","
+
+["WIMPSI_XENON10_2008_0706.0039"]
+description = "2024 4.2 tonne-year Spin-independent result from LZ (power-constrained at -1sigma)"
+label="XENON10 (2008)"
+header = ["wimp_mass","upper_limit"]
+plot_color = "dodgerblue"
+label_range_down = 60
+reference = """
+@article{XENON:2007uwm,
+    author = "Angle, J. and others",
+    collaboration = "XENON",
+    title = "{First Results from the XENON10 Dark Matter Experiment at the Gran Sasso National Laboratory}",
+    eprint = "0706.0039",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph",
+    doi = "10.1103/PhysRevLett.100.021303",
+    journal = "Phys. Rev. Lett.",
+    volume = "100",
+    pages = "021303",
+    year = "2008"
+}
+"""
+delimiter = ","
+

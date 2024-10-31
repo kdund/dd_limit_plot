@@ -23,7 +23,8 @@ default_values = metadata["default_values"]
 
 
 def find_dd_results(result_key="*.csv", require_metadata = False):
-    possible_results = glob(str(data.joinpath(result_key)))
+    possible_results  = glob(str(data.joinpath(result_key)))
+    possible_results += glob(str("./".joinpath(result_key)))
     if len(possible_results) == 0:
             raise FileNotFoundError("No data .csv matching {:s}".format(str(data.joinpath(result_key))))
     print("{:d} files match your query:".format(len(possible_results)))
