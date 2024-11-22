@@ -722,3 +722,46 @@ reference = """
 """
 delimiter = ","
 
+[WIMPSI_XLZD_2024_2410.17137_200ty]
+description = "2024 XLZD projection"
+label="XLZD (200ty)"
+header = ["wimp_mass","sensitivity_median"]
+exposure = 200
+provenance = "curvetrace"
+plot_color = "purple"
+label_range_down = 60
+reference = """
+@article{XLZD:2024nsu,
+    author = "Aalbers, J. and others",
+    collaboration = "XLZD",
+    title = "{The XLZD Design Book: Towards the Next-Generation Liquid Xenon Observatory for Dark Matter and Neutrino Physics}",
+    eprint = "2410.17137",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    month = "10",
+    year = "2024"
+}
+"""
+delimiter = ","
+
+[WIMPSI_XLZD_2024_2410.17137_1000ty]
+description = "2024 XLZD projection"
+label="XLZD (1000ty)"
+header = ["wimp_mass","sensitivity_median"]
+exposure = 1000
+provenance = "curvetrace"
+plot_color = "purple"
+label_range_down = 60
+reference = """
+@article{XLZD:2024nsu,
+    author = "Aalbers, J. and others",
+    collaboration = "XLZD",
+    title = "{The XLZD Design Book: Towards the Next-Generation Liquid Xenon Observatory for Dark Matter and Neutrino Physics}",
+    eprint = "2410.17137",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    month = "10",
+    year = "2024"
+}
+"""
+delimiter = ","
