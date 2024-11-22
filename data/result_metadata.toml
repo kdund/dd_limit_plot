@@ -722,7 +722,7 @@ reference = """
 """
 delimiter = ","
 
-[WIMPSI_XLZD_2024_2410.17137_200ty]
+["WIMPSI_XLZD_2024_2410.17137_200ty"]
 description = "2024 XLZD projection"
 label="XLZD (200ty)"
 header = ["wimp_mass","sensitivity_median"]
@@ -744,7 +744,7 @@ reference = """
 """
 delimiter = ","
 
-[WIMPSI_XLZD_2024_2410.17137_1000ty]
+["WIMPSI_XLZD_2024_2410.17137_1000ty"]
 description = "2024 XLZD projection"
 label="XLZD (1000ty)"
 header = ["wimp_mass","sensitivity_median"]
