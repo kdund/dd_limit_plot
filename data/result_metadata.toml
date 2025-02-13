@@ -213,7 +213,7 @@ delimiter = " "
 
 ["WIMPSI_PandaX-4T_2021_2107.13438"]
 description = "2021 Spin-independent result from PandaX-4T commisioning run"
-label="PandaX-4T (2023)"
+label="PandaX-4T (2021)"
 header = ["wimp_mass","upper_limit"]
 provenance = "collaboration"
 plot_color = "salmon"
