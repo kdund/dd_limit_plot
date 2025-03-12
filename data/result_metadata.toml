@@ -790,3 +790,67 @@ reference = """
 """
 delimiter = ","
 
+["WIMPSI_TESSERACT_2025_2503.03683"]
+description = "First Two-channel TESSERACT search"
+label="TESSERACT (2025)"
+header = ["wimp_mass","upper_limit"]
+exposure =3.1918e-7 #ty 0.233 g × 12 hours
+plot_color = "salmon"
+reference = """
+@article{TESSERACT:2025tfw,
+    author = "Chang, C. L. and others",
+    collaboration = "TESSERACT",
+    title = "{First Limits on Light Dark Matter Interactions in a Low Threshold Two Channel Athermal Phonon Detector from the TESSERACT Collaboration}",
+    eprint = "2503.03683",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    month = "3",
+    year = "2025"
+}
+"""
+delimiter = ","
+provenance = "webplotdigitized"
+
+["WIMPSI_QROCODILE_2025_2412.16279_lightmediator"]
+description = "First QROCODILE Result assuming a light mediator"
+label="QROCODILE (2025)"
+header = ["wimp_mass","upper_limit"]
+plot_color = "orange"
+reference = """
+@article{QROCODILE:2024zmg,
+    author = "Baudis, Laura and others",
+    collaboration = "QROCODILE",
+    title = "{A New Bite Into Dark Matter with the SNSPD-Based QROCODILE Experiment}",
+    eprint = "2412.16279",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ph",
+    reportNumber = "MIT-CTP/5744",
+    month = "12",
+    year = "2024"
+}
+
+"""
+delimiter = ","
+provenance = "webplotdigitized"
+
+["WIMPSI_QROCODILE_2025_2412.16279_heavymediator"]
+description = "First QROCODILE Result assuming a heavy mediator"
+label="QROCODILE (2025)"
+header = ["wimp_mass","upper_limit"]
+plot_color = "orange"
+reference = """
+@article{QROCODILE:2024zmg,
+    author = "Baudis, Laura and others",
+    collaboration = "QROCODILE",
+    title = "{A New Bite Into Dark Matter with the SNSPD-Based QROCODILE Experiment}",
+    eprint = "2412.16279",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ph",
+    reportNumber = "MIT-CTP/5744",
+    month = "12",
+    year = "2024"
+}
+
+"""
+delimiter = ","
+provenance = "webplotdigitized"
