@@ -102,6 +102,7 @@ class DD_result:
         x = self[self.independent_variable]
         y = self[plot_variable]
         line, = plt.plot(x, y, **args)
+        line.set_label(args["label"])
         xd = self.get("label_range_down", x[0])
         xu = self.get("label_range_up", x[-1])
         self.collected_lines[self.key + plot_variable] = line, (xd,xu) , np.min(y), self.get("label","")
@@ -163,6 +164,6 @@ class DD_result:
                 x = [max(x[0], xmin), min(x[1], xmax)]
                 xpos = position_overrides.get(k, x[xi]*xscale)
                 labelLine(line, xpos, outline_width = outline_width, 
-                          outline_color = outline_color, **label_args)
+                              outline_color = outline_color, **label_args)
             except Exception as e:
                 print(k, e)
