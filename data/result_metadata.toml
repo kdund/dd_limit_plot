@@ -793,7 +793,7 @@ delimiter = ","
 ["WIMPSI_TESSERACT_2025_2503.03683"]
 description = "First Two-channel TESSERACT search"
 label="TESSERACT (2025)"
-header = ["wimp_mass","upper_limit"]
+header = ["wimp_mass","upper_limit", "lower_limit"] #lower limit is the overburden exclusion-- it is higher than the upper limit
 exposure =3.1918e-7 #ty 0.233 g × 12 hours
 plot_color = "salmon"
 reference = """
