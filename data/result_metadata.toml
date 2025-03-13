@@ -813,7 +813,7 @@ provenance = "webplotdigitized"
 
 ["WIMPSI_QROCODILE_2025_2412.16279_lightmediator"]
 description = "First QROCODILE Result assuming a light mediator"
-label="QROCODILE (2025)"
+label="QROCODILE light mediator (2025)"
 header = ["wimp_mass","upper_limit"]
 plot_color = "orange"
 reference = """
@@ -835,7 +835,7 @@ provenance = "webplotdigitized"
 
 ["WIMPSI_QROCODILE_2025_2412.16279_heavymediator"]
 description = "First QROCODILE Result assuming a heavy mediator"
-label="QROCODILE (2025)"
+label="QROCODILE heavy mediator (2025)"
 header = ["wimp_mass","upper_limit"]
 plot_color = "orange"
 reference = """
@@ -851,6 +851,30 @@ reference = """
     year = "2024"
 }
 
+"""
+delimiter = ","
+provenance = "webplotdigitized"
+
+["WIMPSI_CRESST_2405.06527.csv"]
+description = "CRESST 2024 Silicon-on-sapphire"
+label="CRESST-III (2025)"
+header = ["wimp_mass","upper_limit"]
+plot_color = "blue"
+reference = """
+@article{CRESST:2024cpr,
+    author = "Angloher, G. and others",
+    collaboration = "CRESST",
+    title = "{First observation of single photons in a CRESST detector and new dark matter exclusion limits}",
+    eprint = "2405.06527",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph.CO",
+    doi = "10.1103/PhysRevD.110.083038",
+    journal = "Phys. Rev. D",
+    volume = "110",
+    number = "8",
+    pages = "083038",
+    year = "2024"
+}
 """
 delimiter = ","
 provenance = "webplotdigitized"
