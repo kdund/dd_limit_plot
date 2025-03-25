@@ -878,3 +878,76 @@ reference = """
 """
 delimiter = ","
 provenance = "webplotdigitized"
+
+
+["WIMPSI_XENONnt_2025_2502.18005"]
+description = "2025 3.1 tonne-year Spin-independent result from XENONnT"
+exposure = 3.1 #tonne-year
+independent_variable = "wimp_mass"
+provenance = "Collaboration"
+plot_color = "dodgerblue"
+label = "XENONnT (2025)"
+header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
+header = ["wimp_mass","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma","upper_limit"]
+label_range_down = 60
+reference = """
+@article{XENON:2025vwd,
+    author = "Aprile, E. and others",
+    collaboration = "XENON",
+    title = "{WIMP Dark Matter Search using a 3.1 tonne $\times$ year Exposure of the XENONnT Experiment}",
+    eprint = "2502.18005",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    month = "2",
+    year = "2025"
+}
+
+"""
+
+["WIMPSDp_XENONnt_2025_2502.18005"]
+description = "2025 3.1 tonne-year Spin-dependent proton-only result from XENONnT"
+exposure = 3.1 #tonne-year
+independent_variable = "wimp_mass"
+provenance = "Collaboration"
+plot_color = "dodgerblue"
+label = "XENONnT (2025)"
+header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
+header = ["wimp_mass","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma","upper_limit"]
+label_range_down = 60
+reference = """
+@article{XENON:2025vwd,
+    author = "Aprile, E. and others",
+    collaboration = "XENON",
+    title = "{WIMP Dark Matter Search using a 3.1 tonne $\times$ year Exposure of the XENONnT Experiment}",
+    eprint = "2502.18005",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    month = "2",
+    year = "2025"
+}
+
+"""
+
+["WIMPSDn_XENONnt_2025_2502.18005"]
+description = "2025 3.1 tonne-year Spin-dependent neutron-only result from XENONnT"
+exposure = 3.1 #tonne-year
+independent_variable = "wimp_mass"
+provenance = "Collaboration"
+plot_color = "dodgerblue"
+label = "XENONnT (2025)"
+header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
+header = ["wimp_mass","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma","upper_limit"]
+label_range_down = 60
+reference = """
+@article{XENON:2025vwd,
+    author = "Aprile, E. and others",
+    collaboration = "XENON",
+    title = "{WIMP Dark Matter Search using a 3.1 tonne $\times$ year Exposure of the XENONnT Experiment}",
+    eprint = "2502.18005",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    month = "2",
+    year = "2025"
+}
+
+"""
