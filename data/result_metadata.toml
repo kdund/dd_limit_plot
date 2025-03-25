@@ -855,7 +855,7 @@ reference = """
 delimiter = ","
 provenance = "webplotdigitized"
 
-["WIMPSI_CRESST_2405.06527.csv"]
+["WIMPSI_CRESST_2405.06527"]
 description = "CRESST 2024 Silicon-on-sapphire"
 label="CRESST-III (2025)"
 header = ["wimp_mass","upper_limit"]
