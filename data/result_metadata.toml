@@ -284,6 +284,7 @@ reference = """
     year = "2019"
 }
 """
+
 ["WIMPSI_XENON1T_2019_S2onlyMigdal"]
 description = "Limits using S2-only signals and assuming the Migdal effect"
 exposure = 0.0062 #tonney
@@ -880,14 +881,13 @@ delimiter = ","
 provenance = "webplotdigitized"
 
 
-["WIMPSI_XENONnt_2025_2502.18005"]
+["WIMPSI_XENONnT_2025_2502.18005"]
 description = "2025 3.1 tonne-year Spin-independent result from XENONnT"
 exposure = 3.1 #tonne-year
 independent_variable = "wimp_mass"
 provenance = "Collaboration"
 plot_color = "dodgerblue"
 label = "XENONnT (2025)"
-header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
 header = ["wimp_mass","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma","upper_limit"]
 label_range_down = 60
 reference = """
@@ -904,14 +904,13 @@ reference = """
 
 """
 
-["WIMPSDp_XENONnt_2025_2502.18005"]
+["WIMPSDp_XENONnT_2025_2502.18005"]
 description = "2025 3.1 tonne-year Spin-dependent proton-only result from XENONnT"
 exposure = 3.1 #tonne-year
 independent_variable = "wimp_mass"
 provenance = "Collaboration"
 plot_color = "dodgerblue"
 label = "XENONnT (2025)"
-header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
 header = ["wimp_mass","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma","upper_limit"]
 label_range_down = 60
 reference = """
@@ -928,14 +927,13 @@ reference = """
 
 """
 
-["WIMPSDn_XENONnt_2025_2502.18005"]
+["WIMPSDn_XENONnT_2025_2502.18005"]
 description = "2025 3.1 tonne-year Spin-dependent neutron-only result from XENONnT"
 exposure = 3.1 #tonne-year
 independent_variable = "wimp_mass"
 provenance = "Collaboration"
 plot_color = "dodgerblue"
 label = "XENONnT (2025)"
-header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
 header = ["wimp_mass","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma","upper_limit"]
 label_range_down = 60
 reference = """
