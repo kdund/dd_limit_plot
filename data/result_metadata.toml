@@ -686,6 +686,7 @@ label="LZ (2024)"
 header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma","discovery_3sigma"]
 plot_color = "darkorange"
 label_range_down = 60
+provenance = "Collaboration"
 reference = """
 @article{LZCollaboration:2024lux,
     author = "Aalbers, J. and others",
