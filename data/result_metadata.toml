@@ -680,10 +680,10 @@ reference = """
     year = "2021"
 }
 """
-["WIMPSI_LZ_2024_privatecommunication"]
+["WIMPSI_LZ_2024_2410.17036"]
 description = "2024 4.2 tonne-year Spin-independent result from LZ (power-constrained at -1sigma)"
 label="LZ (2024)"
-header = ["wimp_mass","upper_limit","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma"]
+header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma","discovery_3sigma"]
 plot_color = "darkorange"
 label_range_down = 60
 reference = """
