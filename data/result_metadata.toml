@@ -701,6 +701,48 @@ reference = """
 """
 delimiter = ","
 
+["WIMPSDp_LZ_2024_2410.17036"]
+description = "2024 4.2 tonne-year Spin-dependent (proton-only) result from LZ (power-constrained at -1sigma)"
+label="LZ (2024)"
+header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma","discovery_3sigma"]
+plot_color = "darkorange"
+label_range_down = 60
+provenance = "Collaboration"
+reference = """
+@article{LZCollaboration:2024lux,
+    author = "Aalbers, J. and others",
+    collaboration = "LZ Collaboration",
+    title = "{Dark Matter Search Results from 4.2 Tonne-Years of Exposure of the LUX-ZEPLIN (LZ) Experiment}",
+    eprint = "2410.17036",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    month = "10",
+    year = "2024"
+}
+"""
+delimiter = ","
+
+["WIMPSDn_LZ_2024_2410.17036"]
+description = "2024 4.2 tonne-year Spin-dependent (neutron-only) result from LZ (power-constrained at -1sigma)"
+label="LZ (2024)"
+header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma","discovery_3sigma"]
+plot_color = "darkorange"
+label_range_down = 60
+provenance = "Collaboration"
+reference = """
+@article{LZCollaboration:2024lux,
+    author = "Aalbers, J. and others",
+    collaboration = "LZ Collaboration",
+    title = "{Dark Matter Search Results from 4.2 Tonne-Years of Exposure of the LUX-ZEPLIN (LZ) Experiment}",
+    eprint = "2410.17036",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    month = "10",
+    year = "2024"
+}
+"""
+delimiter = ","
+
 ["WIMPSI_XENON10_2008_0706.0039"]
 description = "2024 4.2 tonne-year Spin-independent result from LZ (power-constrained at -1sigma)"
 label="XENON10 (2008)"
