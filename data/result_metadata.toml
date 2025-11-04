@@ -1010,7 +1010,7 @@ reference = """
 }
 
 """
-["WIMPSDn_XENONnT_2025_2502.18005"]
+["WIMPSI_PandaX-4T_2025_2507.11930.csv"]
 description = "2025 low-mass PandaX WIMP limit"
 exposure = 1.2 #tonne-year
 independent_variable = "wimp_mass"
