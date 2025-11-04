@@ -1010,3 +1010,25 @@ reference = """
 }
 
 """
+["WIMPSDn_XENONnT_2025_2502.18005"]
+description = "2025 low-mass PandaX WIMP limit"
+exposure = 1.2 #tonne-year
+independent_variable = "wimp_mass"
+provenance = "webplotdigitized"
+plot_color = "green"
+label = "PandaX (2025)"
+header = ["wimp_mass","upper_limit"]
+label_range_down = 2
+label_range_up = 5
+reference = """
+@article{Zhang:2025ajc,
+    author = "Zhang, Minzhen and others",
+    collaboration ="PandaX",
+    title = "{Search for Light Dark Matter with 259-day data in PandaX-4T}",
+    eprint = "2507.11930",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    month = "7",
+    year = "2025"
+}
+"""
