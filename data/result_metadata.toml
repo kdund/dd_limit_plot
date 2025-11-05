@@ -921,7 +921,9 @@ provenance = "webplotdigitized"
 description = "CRESST 2024 Silicon-on-sapphire"
 label="CRESST-III (2025)"
 header = ["wimp_mass","upper_limit"]
-plot_color = "blue"
+plot_color = "crimson"
+label_range_down = 0.08
+label_range_up = 0.5
 reference = """
 @article{CRESST:2024cpr,
     author = "Angloher, G. and others",
@@ -1010,7 +1012,7 @@ reference = """
 }
 
 """
-["WIMPSI_PandaX-4T_2025_2507.11930.csv"]
+["WIMPSI_PandaX-4T_2025_2507.11930"]
 description = "2025 low-mass PandaX WIMP limit"
 exposure = 1.2 #tonne-year
 independent_variable = "wimp_mass"
