@@ -9,7 +9,7 @@ scaling = 1.0 #limits and sensi will be scaled with this factor (for unit conver
 label = "" #label used for plotting
 plot_color = "k" #plot color unless overridden
 provenance = ".csv file" #,"Collaboration", "webplotdigitized" or whatnot-- good to remember if they're solid
-#optional 
+#optional
 # reference = """.bib reference text"""
 # exposure #might be nice if you want to plot best-limit vs exposure?
 # label_range_down = -np.inf #set this if you want to give the plotter a hint for the range in which to place the label (e.g. above 70 GeV, xenon limits are flattish)
@@ -38,7 +38,7 @@ reference = """
     number = "4",
     pages = "041003",
     year = "2023"
-    } 
+    }
 """
 
 ["WIMPSDp_XENONnT_2023_2303.14729"]
@@ -64,7 +64,7 @@ reference = """
     number = "4",
     pages = "041003",
     year = "2023"
-    } 
+    }
 """
 
 ["WIMPSDn_XENONnT_2023_2303.14729"]
@@ -90,7 +90,7 @@ reference = """
     number = "4",
     pages = "041003",
     year = "2023"
-    } 
+    }
 """
 
 ["nufloor_Billardetal_2014_1307.5458"]
@@ -556,7 +556,7 @@ units_independent_variable = "GeV/c^2"
 units_dependent_variable = "cm^2"
 header = ["wimp_mass", "upper_limit_best", "upper_limit", "upper_upper_limit", "lower_upper_limit"] #The third comment is the "official median limit, see https://arxiv.org/src/1707.01632v3/anc/CDMSlite_Run2_DataRelease_Document.pdf"
 delimiter = "\t"
-label = "CDMSlite (2018)" 
+label = "CDMSlite (2018)"
 provenance = "Collaboration"
 plot_color = "red"
 reference = """
@@ -578,13 +578,13 @@ reference = """
 """
 ["WIMPSI_DAMIC_2020"]
 description = "DAMIC spin-independent upper limit"
-independent_variable = "wimp_mass" 
+independent_variable = "wimp_mass"
 units_independent_variable = "GeV/c^2"
 units_dependent_variable = "cm^2"
-header = ["wimp_mass", "upper_limit"] 
+header = ["wimp_mass", "upper_limit"]
 delimiter = ","
 label = "DAMIC (2020)" #label used for plotting
-provenance = ".csv file" 
+provenance = ".csv file"
 plot_color = "brown"
 reference = """
 @article{DAMIC:2020cut,
@@ -605,11 +605,11 @@ reference = """
 ["WIMPSI_CRESSTIII_2019"]
 description = "CRESST-III low-mass SI dark-matter search"
 exposure = 9.97e-6 #ty, 3.64 kgd
-independent_variable = "wimp_mass" 
+independent_variable = "wimp_mass"
 units_independent_variable = "GeV/c^2"
 units_dependent_variable = "cm^2" #once scaling applied
 scaling = 1e-36
-header = ["wimp_mass", "upper_limit"] 
+header = ["wimp_mass", "upper_limit"]
 delimiter = ","
 label = "CREST-III (2019)" #label used for plotting
 plot_color = "crimson"
@@ -632,11 +632,11 @@ reference = """
 ["WIMPSI_LUX_2017_run4combined"]
 description = "LUX SI dark-matter search"
 exposure = 0.092 #ty, 250 kgd
-independent_variable = "wimp_mass" 
+independent_variable = "wimp_mass"
 units_independent_variable = "GeV/c^2"
 units_dependent_variable = "cm^2" #once scaling applied
 scaling = 1
-header = ["index", "wimp_mass", "upper_limit"] 
+header = ["index", "wimp_mass", "upper_limit"]
 delimiter = ","
 label = "LUX (2017)" #label used for plotting
 plot_color = "magenta"
@@ -1010,3 +1010,284 @@ reference = """
 }
 
 """
+
+
+["WIMPSI_DAMIC_2025_Migdal_heavymediator"]
+description = "2025 DAMIC-M heavy mediator DM-nucleus scattering with Migdal effect"
+label = "DAMIC-M Migdal (2025)"
+header = ["wimp_mass","upper_limit"]
+provenance = "Collaboration"
+plot_color = "brown"
+reference="""
+@article{DAMIC-M:2025luv,
+    author = "Aggarwal, K. and others",
+    collaboration = "DAMIC-M",
+    title = "{Probing Benchmark Models of Hidden-Sector Dark Matter with DAMIC-M}",
+    eprint = "2503.14617",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/2tcc-bqck",
+    journal = "Phys. Rev. Lett.",
+    volume = "135",
+    number = "7",
+    pages = "071002",
+    year = "2025"
+}
+"""
+
+["WIMPSI_DarkSide-50_nq"]
+description = "DarkSide-50 spin-independent upper limit, no quenching fluctuations (conservative), 2023"
+label = "DarkSide-50 NQ (2023)"
+header = ["wimp_mass", "upper_limit"]
+provenance = "curvetrace"
+plot_color = "purple"
+
+["WIMPSI_LZ_CRDM"]
+description = "LZ Cosmic Ray Boosted DM-nucleus scattering"
+label = "LZ CRDM (2025)"
+# Jelle: Official data file also has sensitivity, but I was too lazy to convert it
+header = ["wimp_mass","upper_limit"]
+provenance = "Collaboration"
+plot_color = "darkorange"
+reference = """
+@article{LZ:2025iaw,
+    author = "Aalbers, J. and others",
+    collaboration = "LZ",
+    title = "{New Constraints on Cosmic Ray-Boosted Dark Matter from the LUX-ZEPLIN Experiment}",
+    eprint = "2503.18158",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    reportNumber = "FERMILAB-PUB-25-0191-V",
+    doi = "10.1103/nr92-jvt3",
+    journal = "Phys. Rev. Lett.",
+    volume = "134",
+    number = "24",
+    pages = "241801",
+    year = "2025"
+}
+"""
+
+["WIMPSI_PandaX-4T_migdal_heavymediator"]
+description = "PandaX-4T Migdal heavy mediator DM-nucleus scattering"
+label = "PandaX-4T Migdal (2023)"
+header = ["wimp_mass","upper_limit"]
+provenance = "curvetrace"
+plot_color = "salmon"
+reference = """
+@article{PandaX:2023xgl,
+    author = "Huang, Di and others",
+    collaboration = "PandaX",
+    title = "{Search for Dark-Matter{\textendash}Nucleon Interactions with a Dark Mediator in PandaX-4T}",
+    eprint = "2308.01540",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/PhysRevLett.131.191002",
+    journal = "Phys. Rev. Lett.",
+    volume = "131",
+    number = "19",
+    pages = "191002",
+    year = "2023"
+}
+"""
+
+["WIMPSI_PandaX-4T_S2only_2025"]
+description = "2025 PandaX-4T S2-only DM-nucleus scattering"
+label = "PandaX-4T (2025)"
+header = ["wimp_mass","upper_limit"]
+provenance = "curvetrace"
+plot_color = "salmon"
+reference = """
+@article{Zhang:2025ajc,
+    author = "Zhang, Minzhen and others",
+    title = "{Search for Light Dark Matter with 259-day data in PandaX-4T}",
+    eprint = "2507.11930",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    month = "7",
+    year = "2025"
+}
+"""
+
+["WIMPSI_SENSEI_Migdal_hidden"]
+description = "Sensei dark-matter nucleus scattering limit with Migdal effect 'hidden', F_DM=1, 2312.13342v2"
+label = "SENSEI Migdal (2025)"
+header = ["wimp_mass","upper_limit"]
+provenance = "curvetrace"
+plot_color = 'saddlebrown'
+reference = """
+@article{SENSEI:2023zdf,
+    author = "Adari, Prakruth and others",
+    collaboration = "SENSEI",
+    title = "{First Direct-Detection Results on Sub-GeV Dark Matter Using the SENSEI Detector at SNOLAB}",
+    eprint = "2312.13342",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph.CO",
+    reportNumber = "YITP-SB-2023-30, FERMILAB-PUB-23-0824-CSAID-PPD",
+    doi = "10.1103/PhysRevLett.134.011804",
+    journal = "Phys. Rev. Lett.",
+    volume = "134",
+    number = "1",
+    pages = "011804",
+    year = "2025"
+}
+"""
+
+
+["WIMPE_DAMIC_2025_QCDark_heavymediator"]
+description = "2025 DAMIC-M heavy mediator DM-electron scattering"
+label = "DAMIC-M (2025)"
+header = ["wimp_mass","upper_limit"]
+provenance = "Collaboration"
+plot_color = "brown"
+reference="""
+@article{DAMIC-M:2025luv,
+    author = "Aggarwal, K. and others",
+    collaboration = "DAMIC-M",
+    title = "{Probing Benchmark Models of Hidden-Sector Dark Matter with DAMIC-M}",
+    eprint = "2503.14617",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/2tcc-bqck",
+    journal = "Phys. Rev. Lett.",
+    volume = "135",
+    number = "7",
+    pages = "071002",
+    year = "2025"
+}
+"""
+
+["WIMPE_PandaX-4T_dme_crdm"]
+description = "PandaX-4T Cosmic ray boosted DM-electron scattering"
+provenance = "curvetrace"
+header = ["wimp_mass","upper_limit"]
+label = "PandaX-4T CRDM (2024)"
+plot_color = "salmon"
+reference = """
+@article{PandaX:2024pme,
+    author = "Shang, Xiaofeng and others",
+    collaboration = "PandaX",
+    title = "{Search for Cosmic-Ray Boosted Sub-MeV Dark-Matter{\textendash}Electron Scattering in PandaX-4T}",
+    eprint = "2403.08361",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/PhysRevLett.133.101805",
+    journal = "Phys. Rev. Lett.",
+    volume = "133",
+    number = "10",
+    pages = "101805",
+    year = "2024"
+}
+"""
+
+["WIMPE_PandaX-4T_s2only_2025_heavymediator"]
+description = "2025 PandaX-4T S2-only DM-electron scattering heavy mediator"
+provenance = "curvetrace"
+header = ["wimp_mass","upper_limit"]
+label = "PandaX-4T S2-only (2025)"
+plot_color = "salmon"
+reference = """
+@article{Zhang:2025ajc,
+    author = "Zhang, Minzhen and others",
+    title = "{Search for Light Dark Matter with 259-day data in PandaX-4T}",
+    eprint = "2507.11930",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    month = "7",
+    year = "2025"
+}
+"""
+
+["WIMPE_PandaX-4T_srdm"]
+description = "PandaX-4T Solar-reflected DM-electron scattering"
+provenance = "curvetrace"
+header = ["wimp_mass","upper_limit"]
+label = "PandaX-4T SRDM (2025)"
+plot_color = "salmon"
+reference = """
+@article{PandaX:2024syk,
+    author = "Shen, Guofang and others",
+    collaboration = "PandaX, (PandaX Collaboration)25,26",
+    title = "{Search for Solar Boosted Dark Matter Particles at the PandaX-4T Experiment}",
+    eprint = "2412.19970",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/PhysRevLett.134.161003",
+    journal = "Phys. Rev. Lett.",
+    volume = "134",
+    number = "16",
+    pages = "161003",
+    year = "2025"
+}
+"""
+
+
+["WIMPE_SENSEI_hidden"]
+description = "Sensei dark-matter electron scattering limit 'hidden', F_DM=1, 2312.13342v2"
+provenance = "curvetrace"
+header = ["wimp_mass","upper_limit"]
+label = "SENSEI (2025)"
+plot_color = 'saddlebrown'
+reference = """
+@article{SENSEI:2023zdf,
+    author = "Adari, Prakruth and others",
+    collaboration = "SENSEI",
+    title = "{First Direct-Detection Results on Sub-GeV Dark Matter Using the SENSEI Detector at SNOLAB}",
+    eprint = "2312.13342",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph.CO",
+    reportNumber = "YITP-SB-2023-30, FERMILAB-PUB-23-0824-CSAID-PPD",
+    doi = "10.1103/PhysRevLett.134.011804",
+    journal = "Phys. Rev. Lett.",
+    volume = "134",
+    number = "1",
+    pages = "011804",
+    year = "2025"
+}
+"""
+
+["WIMPE_XENONnT_fewe_dme_halo_heavymediator"]
+description = "XENONnT few-electron DM-electron scattering heavy mediator halo DM"
+provenance = "curvetrace"
+header = ["wimp_mass","upper_limit"]
+label = "XENONnT few-e (2025)"
+plot_color = "dodgerblue"
+reference = """
+@article{XENON:2024znc,
+    author = "Aprile, E. and others",
+    collaboration = "XENON",
+    title = "{Search for Light Dark Matter in Low-Energy Ionization Signals from XENONnT}",
+    eprint = "2411.15289",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/PhysRevLett.134.161004",
+    journal = "Phys. Rev. Lett.",
+    volume = "134",
+    number = "16",
+    pages = "161004",
+    year = "2025"
+}
+"""
+
+["WIMPSI_DarkSide-50_Migdal"]
+description = "DarkSide-50 S2-only Migdal"
+provenance = "curvetrace"
+header = ["wimp_mass","upper_limit"]
+label = "DarkSide-50 Migdal (2023)"
+plot_color = "purple"
+reference = """
+@article{DarkSide:2022dhx,
+    author = "Agnes, P. and others",
+    collaboration = "DarkSide",
+    title = "{Search for Dark-Matter{\textendash}Nucleon Interactions via Migdal Effect with DarkSide-50}",
+    eprint = "2207.11967",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/PhysRevLett.130.101001",
+    journal = "Phys. Rev. Lett.",
+    volume = "130",
+    number = "10",
+    pages = "101001",
+    year = "2023"
+}
+"""
+
