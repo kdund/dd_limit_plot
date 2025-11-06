@@ -1,0 +1,26 @@
+#: table_doi: 10.17182/hepdata.157863.v1/t1
+#: name: CRDM cross section
+#: description: 90% CL CRDM-nucleon cross sections
+#: data_file: LZ_CRDM_limits.yaml
+#: data_license: CC0 https://creativecommons.org/publicdomain/zero/1.0/
+#: keyword reactions: chi N-> chi N
+#: keyword observables: CRDM-nucleon cross section
+#: keyword phrases: cosmic ray-boosted dark matter | CRDM | spin-independent | cross section | cosmic ray | boosted | dark matter
+# wimp_mass,upper_limit
+0.0001,3.848319418286902e-33
+0.0001778279,4.062230723439991e-33
+0.0003162278,4.34745975857102e-33
+0.0005623413,4.3720158461599774e-33
+0.001,4.695886959629462e-33
+0.001778279,4.67238118902906e-33
+0.003162278,5.1611188362382127e-33
+0.005623413,5.061788559889993e-33
+0.01,5.86224957701528e-33
+0.01778279,7.09377371788747e-33
+0.03162278,8.995441634469447e-33
+0.05623413,1.2687903181504126e-32
+0.1,2.13089522473923e-32
+0.1778279,3.5103454335120406e-32
+0.3162278,5.876373032939277e-32
+0.5623413,8.862023170717531e-32
+1.0,1.177833234009939e-31
