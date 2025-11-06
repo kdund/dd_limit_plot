@@ -1041,6 +1041,24 @@ label = "DarkSide-50 NQ (2023)"
 header = ["wimp_mass", "upper_limit"]
 provenance = "curvetrace"
 plot_color = "purple"
+reference = """
+@article{DarkSide-50:2022qzh,
+    author = "Agnes, P. and others",
+    collaboration = "DarkSide-50",
+    title = "{Search for low-mass dark matter WIMPs with 12~ton-day exposure of DarkSide-50}",
+    eprint = "2207.11966",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    reportNumber = "FERMILAB-PUB-22-589-ND-PPD-SCD",
+    doi = "10.1103/PhysRevD.107.063001",
+    journal = "Phys. Rev. D",
+    volume = "107",
+    number = "6",
+    pages = "063001",
+    year = "2023"
+}
+"""
+
 
 ["WIMPSI_LZ_CRDM"]
 description = "LZ Cosmic Ray Boosted DM-nucleus scattering"
