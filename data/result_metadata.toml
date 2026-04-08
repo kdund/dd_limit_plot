@@ -1332,3 +1332,23 @@ reference = """
 }
 
 """
+
+
+["WIMPSI_LZ_2025_lowmass_2512.08065v1"]
+description = "LZ 2025 low-mass WIMP search"
+provenance = "collaboration"
+header = ["wimp_mass","upper_limit"]
+label = "LZ (2025)"
+plot_color = "darkorange"
+reference = """
+@article{LZ:2025igz,
+    author = "Akerib, D. S. and others",
+    collaboration = "LZ",
+    title = "{Searches for Light Dark Matter and Evidence of Coherent Elastic Neutrino-Nucleus Scattering of Solar Neutrinos with the LUX-ZEPLIN (LZ) Experiment}",
+    eprint = "2512.08065",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    month = "12",
+    year = "2025"
+}
+"""
