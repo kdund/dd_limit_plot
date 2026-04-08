@@ -1309,3 +1309,26 @@ reference = """
 }
 """
 
+["WIMPSI_PandaX_4T_2025_2408.00664"]
+description = "PandaX-4T 1.54ty upper limit"
+provenance = "curvetrace"
+header = ["wimp_mass","upper_limit"]
+label = "PandaX-4T (2025)"
+plot_color = "salmon"
+reference = """
+@article{PandaX:2024qfu,
+    author = "Bo, Zihao and others",
+    collaboration = "PandaX",
+    title = "{Dark Matter Search Results from 1.54{\,}{\,}Tonne{\textperiodcentered}Year Exposure of PandaX-4T}",
+    eprint = "2408.00664",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/PhysRevLett.134.011805",
+    journal = "Phys. Rev. Lett.",
+    volume = "134",
+    number = "1",
+    pages = "011805",
+    year = "2025"
+}
+
+"""
