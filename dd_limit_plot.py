@@ -65,7 +65,6 @@ class DD_result:
 
     def __init__(self, result_key=""):
         possible_results = glob(str(data.joinpath(result_key)))
-        possible_results+= glob("./"+result_key)
         if len(possible_results) == 1:
             self.load(possible_results[0])
         elif len(possible_results) == 0:
