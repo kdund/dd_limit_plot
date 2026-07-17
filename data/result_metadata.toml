@@ -675,14 +675,14 @@ reference = """
     doi = "10.1103/PhysRevLett.127.251802",
     journal = "Phys. Rev. Lett.",
     volume = "127",
-    number = "25",
+    number = "255)
     pages = "251802",
     year = "2021"
 }
 """
 ["WIMPSI_LZ_2024_2410.17036"]
-description = "2024 4.2 tonne-year Spin-independent result from LZ (power-constrained at -1sigma)"
-label="LZ (2024)"
+description = "2025 4.2 tonne-year Spin-independent result from LZ (power-constrained at -1sigma)"
+label="LZ (2025)"
 header = ["wimp_mass","upper_limit","upper_limit_unconstrained","sensitivity_m2sigma","sensitivity_m1sigma","sensitivity_median","sensitivity_p1sigma","sensitivity_p2sigma","discovery_3sigma"]
 plot_color = "darkorange"
 label_range_down = 60
@@ -1319,7 +1319,7 @@ reference = """
 @article{PandaX:2024qfu,
     author = "Bo, Zihao and others",
     collaboration = "PandaX",
-    title = "{Dark Matter Search Results from 1.54{\,}{\,}Tonne{\textperiodcentered}Year Exposure of PandaX-4T}",
+    title = "{Dark Matter Search Results from 1.54 Tonne-Year Exposure of PandaX-4T}",
     eprint = "2408.00664",
     archivePrefix = "arXiv",
     primaryClass = "hep-ex",
@@ -1338,7 +1338,7 @@ reference = """
 description = "LZ 2025 low-mass WIMP search"
 provenance = "collaboration"
 header = ["wimp_mass","upper_limit"]
-label = "LZ (2025)"
+label = "LZ (2026)"
 plot_color = "darkorange"
 reference = """
 @article{LZ:2025igz,
