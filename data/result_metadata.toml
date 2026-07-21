@@ -529,7 +529,7 @@ units_independent_variable = "GeV/c^2"
 units_dependent_variable = "cm^2"
 header = ["wimp_mass", "upper_limit"] #These lines define which columns from .csv correspond to what values
 delimiter = ","
-label = "DarkSide-50 (2023, NQ)" #label used for plotting
+label = "DarkSide-50 (2018, NQ)" #label used for plotting
 provenance = ".csv file" #,"Collaboration", "webplotdigitized" or whatnot-- good to remember if they're solid
 plot_color = "purple"
 reference = """
@@ -1350,5 +1350,139 @@ reference = """
     primaryClass = "hep-ex",
     month = "12",
     year = "2025"
+}
+"""
+
+["WIMPSI_COSINE-100_2018_1906.01791"]
+description = "COSINE-100 upper limit"
+provenance = "curvetrace"
+header = ["wimp_mass","upper_limit"]
+label = "COSINE-100 (2018)"
+plot_color = "salmon"
+reference = """
+@article{Adhikari:2018ljm,
+    author = "Adhikari, Govinda and others",
+    title = "{An experiment to search for dark-matter interactions using sodium iodide detectors}",
+    eprint = "1906.01791",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph.IM",
+    doi = "10.1038/s41586-018-0739-1",
+    journal = "Nature",
+    volume = "564",
+    number = "7734",
+    pages = "83--86",
+    year = "2018",
+    note = "[Erratum: Nature 566, E2 (2019)]"
+}
+"""
+
+["WIMPSI_DAMARECAST_Na_90contour_2009_0808.3607"]
+description = "90 % confidence interval of Na-scattering for the DAMA excess"
+provenance = "curvetrace"
+header = ["wimp_mass","discovery_contour"]
+label = "DAMA Na (2009)"
+plot_color = "brown"
+reference = """
+@article{Savage:2008er,
+    author = "Savage, C. and Gelmini, G. and Gondolo, P. and Freese, K.",
+    title = "{Compatibility of DAMA/LIBRA dark matter detection with other searches}",
+    eprint = "0808.3607",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph",
+    reportNumber = "FTPI-MINN-08-34, MCTP-08-59",
+    doi = "10.1088/1475-7516/2009/04/010",
+    journal = "JCAP",
+    volume = "04",
+    pages = "010",
+    year = "2009"
+}
+"""
+
+["WIMPSI_DAMARECAST_I_90contour_2009_0808.3607"]
+description = "90 % confidence interval of I-scattering for the DAMA excess"
+provenance = "curvetrace"
+header = ["wimp_mass","discovery_contour"]
+label = "DAMA I (2009)"
+plot_color = "brown"
+reference = """
+@article{Savage:2008er,
+    author = "Savage, C. and Gelmini, G. and Gondolo, P. and Freese, K.",
+    title = "{Compatibility of DAMA/LIBRA dark matter detection with other searches}",
+    eprint = "0808.3607",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph",
+    reportNumber = "FTPI-MINN-08-34, MCTP-08-59",
+    doi = "10.1088/1475-7516/2009/04/010",
+    journal = "JCAP",
+    volume = "04",
+    pages = "010",
+    year = "2009"
+}
+"""
+
+["WIMPSI_DEAP-3600_2026_2603.13965"]
+description = "Upper limit from profile likelihood DEAP-3600 data"
+provenance = "curvetrace"
+header = ["wimp_mass","upper_limit"]
+label = "DEAP-3600 (2026)"
+plot_color = "green"
+reference="""
+@article{DEAP:2026orr,
+    author = "Adhikari, P. and others",
+    collaboration = "DEAP",
+    title = "{Dark Matter Search with the DEAP-3600 Detector using the Profile Likelihood Ratio Method}",
+    eprint = "2603.13965",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    month = "3",
+    year = "2026"
+}
+"""
+
+["WIMPSI_PICO-60_2019_1902.04031"]
+description = "Upper limit from PICO-60 full exposure"
+provenance = "curvetrace"
+header = ["wimp_mass","upper_limit"]
+label = "PICO-60 (2019)"
+plot_color = "purple"
+reference="""
+@article{PICO:2019vsc,
+    author = "Amole, C. and others",
+    collaboration = "PICO",
+    title = "{Dark Matter Search Results from the Complete Exposure of the PICO-60 C$_3$F$_8$ Bubble Chamber}",
+    eprint = "1902.04031",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph.CO",
+    reportNumber = "FERMILAB-PUB-19-073-AE-E",
+    doi = "10.1103/PhysRevD.100.022001",
+    journal = "Phys. Rev. D",
+    volume = "100",
+    number = "2",
+    pages = "022001",
+    year = "2019"
+}
+"""
+
+["WIMPSDp_PICO-60_2019_1902.04031"]
+description = "Spin-independent (proton) Upper limit from PICO-60 full exposure"
+provenance = "curvetrace"
+header = ["wimp_mass","upper_limit"]
+label = "PICO-60 (2019)"
+plot_color = "purple"
+reference="""
+@article{PICO:2019vsc,
+    author = "Amole, C. and others",
+    collaboration = "PICO",
+    title = "{Dark Matter Search Results from the Complete Exposure of the PICO-60 C$_3$F$_8$ Bubble Chamber}",
+    eprint = "1902.04031",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph.CO",
+    reportNumber = "FERMILAB-PUB-19-073-AE-E",
+    doi = "10.1103/PhysRevD.100.022001",
+    journal = "Phys. Rev. D",
+    volume = "100",
+    number = "2",
+    pages = "022001",
+    year = "2019"
 }
 """
