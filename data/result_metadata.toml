@@ -1486,3 +1486,55 @@ reference="""
     year = "2019"
 }
 """
+
+["WIMPSI_XENONnT_2026_2604.06002"]
+description = ""
+exposure = 6.77 #tonne-year
+independent_variable = "wimp_mass"
+provenance = "Collaboration"
+plot_color = "dodgerblue"
+label = "XENONnT (2026)"
+header = ["wimp_mass","upper_limit"]
+label_range_down = 60
+reference = """
+@article{XENON:2026smt,
+    author = "Aprile, Elena and others",
+    collaboration = "XENON",
+    title = "{Probing the Solar B8 Neutrino Fog with XENONnT}",
+    eprint = "2604.06002",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/xvpn-w3q9",
+    journal = "Phys. Rev. Lett.",
+    volume = "137",
+    number = "9",
+    pages = "091807",
+    year = "2026"
+}
+"""
+
+["WIMPSI_XENONnT_2026_2601.11296"]
+description = ""
+exposure = 7.8 #tonne-year
+independent_variable = "wimp_mass"
+provenance = "Collaboration"
+plot_color = "dodgerblue"
+label = "XENONnT (2026)"
+header = ["wimp_mass","upper_limit"]
+label_range_down = 60
+reference = """
+@article{XENON:2026gxb,
+    author = "Aprile, E. and others",
+    collaboration = "XENON",
+    title = "{Light Dark Matter Search with 7.8~Tonne-Year of Ionization-Only Data in XENONnT}",
+    eprint = "2601.11296",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/2lrq-f6bk",
+    journal = "Phys. Rev. Lett.",
+    volume = "137",
+    number = "5",
+    pages = "051003",
+    year = "2026"
+}
+"""
